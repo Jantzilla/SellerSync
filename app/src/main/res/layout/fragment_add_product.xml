@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sellersync.jantz.sellersync.AddProductFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/what_product"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        fontPath="fonts/avenir.ttf"
+        tools:ignore="MissingPrefix"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/btnNewProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btnnew"
+            android:textSize="18dp"
+            android:paddingRight="32dp"
+            android:paddingEnd="32dp"
+            android:paddingLeft="32dp"
+            android:paddingStart="32dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:textStyle="bold"
+            fontPath="fonts/avenir.ttf"
+            tools:ignore="MissingPrefix"/>
+        <Button
+            android:id="@+id/btnRestock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnrestock"
+            android:textSize="18dp"
+            android:paddingRight="32dp"
+            android:paddingEnd="32dp"
+            android:paddingLeft="32dp"
+            android:paddingStart="32dp"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            fontPath="fonts/avenir.ttf"
+            tools:ignore="MissingPrefix"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

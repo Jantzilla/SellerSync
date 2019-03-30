@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sellersync.jantz.sellersync.UploadFragment"
+    android:padding="24dp">
+
+    <!-- TODO: Update blank fragment layout -->
+    <Button
+        android:id="@+id/btn_upload_inventory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/inventory_list"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"
+        fontPath="fonts/avenir.ttf"
+        tools:ignore="MissingPrefix"/>
+
+    <Button
+        android:id="@+id/btn_upload_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/product_desc"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"
+        fontPath="fonts/avenir.ttf"
+        tools:ignore="MissingPrefix"/>
+
+    <Button
+        android:id="@+id/btn_upload_user_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/user_info"
+        android:textStyle="bold"
+        fontPath="fonts/avenir.ttf"
+        tools:ignore="MissingPrefix"/>
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sellersync.jantz.sellersync.ListingsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <EditText
+        android:background="@color/colorPrimary"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:id="@+id/etSearch"
+        android:hint="@string/search_listings"/>
+
+    <TextView
+        android:id="@+id/tvListing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/listings"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textStyle="bold"
+        android:textColor="#808080"
+        android:gravity="center"
+        fontPath="fonts/erasbolditc.ttf"
+        tools:ignore="MissingPrefix" />
+
+    <ListView
+        android:id="@+id/activitylistview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvListing" />
+
+</RelativeLayout>

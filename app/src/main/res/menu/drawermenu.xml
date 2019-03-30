@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/main"
+        android:id="@+id/main_drawer">
+        <menu>
+            <item
+                android:title="@string/home"
+                android:id="@+id/nav_item_home"
+                android:checkable="true"
+                android:icon="@drawable/home" />
+
+            <item android:title="@string/profile"
+                android:checkable="true"
+                android:id="@+id/nav_item_prof"
+                android:icon="@drawable/profile"/>
+
+
+            <item android:title="@string/reminders"
+                android:checkable="true"
+                android:id="@+id/nav_item_reminders"
+                android:icon="@drawable/reminders_one"/>
+
+            <item
+                android:title="@string/Communication"
+                android:id="@+id/nav_item_communication"
+                android:checkable="true"
+                android:icon="@drawable/communication" />
+        </menu>
+    </item>
+
+    <item android:title = "@string/Tools">
+        <menu>
+
+            <item
+                android:title="@string/Settings"
+                android:id="@+id/nav_item_settings"
+                android:checkable="true"
+                android:icon="@drawable/settings" />
+            <item
+                android:title="@string/Upload"
+                android:id="@+id/nav_item_upload"
+                android:checkable="true"
+                android:icon="@drawable/upload" />
+            <item
+                android:title="@string/Reports"
+                android:id="@+id/nav_item_reports"
+                android:checkable="true"
+                android:icon="@drawable/reports"/>
+
+        </menu>
+
+    </item>
+
+    <item android:title="@string/Other">
+        <menu>
+            <item
+                android:id="@+id/nav_item_help"
+                android:checkable="true"
+                android:icon="@drawable/help"
+                android:title="@string/Help" />
+            <item
+                android:id="@+id/nav_item_feedback"
+                android:checkable="true"
+                android:icon="@drawable/feedback"
+                android:title="@string/Feedback" />
+            <item
+                android:id="@+id/nav_item_about"
+                android:checkable="true"
+                android:icon="@drawable/about"
+                android:title="@string/About" />
+        </menu>
+    </item>
+
+</menu>

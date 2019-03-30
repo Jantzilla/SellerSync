@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:fitsSystemWindows="true"
+    tools:context="com.sellersync.jantz.sellersync.RegisterActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="24dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <!-- Username -->
+
+        <EditText android:id="@+id/etUsername"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="@string/username"/>
+
+        <!-- Password 1 Label -->
+
+        <EditText android:id="@+id/etPassword"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="@string/password"/>
+
+        <!-- Password 2 Label -->
+
+        <EditText android:id="@+id/etRePassword"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="@string/re_password"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/user_permissions"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/colorPrimaryDark"
+            fontPath="fonts/avenir.ttf"
+            tools:ignore="MissingPrefix"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="12dp">
+        <CheckBox
+            android:id="@+id/cbListing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/listing"/>
+        <CheckBox
+            android:id="@+id/cbInventory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/inventory"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"/>
+        <CheckBox
+            android:id="@+id/cbShipping"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shipping"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+        <CheckBox
+            android:id="@+id/cbPurchasing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/purchasing"/>
+        <CheckBox
+            android:id="@+id/cbReturns"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/returns"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"/>
+        <CheckBox
+            android:id="@+id/cbAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/admin"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnCreate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:text="@string/submit"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:paddingEnd="32dp"
+            android:paddingStart="32dp"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:layout_gravity="center"
+            fontPath="fonts/avenir.ttf"
+            tools:ignore="MissingPrefix"/>
+
+    </LinearLayout>
+</ScrollView>
